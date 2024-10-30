@@ -4,7 +4,7 @@ import cors from 'cors';
 
 const app = express();
 
-const whitelist = ['http://localhost', 'https://redesla.la/'];
+const whitelist = ['http://localhost', 'https://redesla.la/', 'https://redesla.la/redesla'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
